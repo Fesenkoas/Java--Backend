@@ -1,0 +1,12 @@
+package telran.supermarket.dao;
+
+import telran.supermarket.model.Product;
+
+public interface SuperMarket {
+	
+	boolean addProduct(Product product);
+	Product removeProduct(long barCode);
+	Product findByBarCode(long barCode);
+	
+
+}

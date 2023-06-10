@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;42_ChatServer_30_03_2023/src&apos;&#x0D;&#x0A;- Original project: &apos;41_SocketServer_27_03_2023&apos;&#x0D;&#x0A;- Destination element: &apos;42_ChatServer_30_03_2023/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     41_SocketServer_27_03_2023/src/telran.socket.server.task&#x0D;&#x0A;     41_SocketServer_27_03_2023/src/telran.socket.server.controller" description="Copy packages" destination="=42_ChatServer_30_03_2023/src" element1="/src&lt;telran.socket.server.task" element2="/src&lt;telran.socket.server.controller" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1680191428188" version="1.0"/>
+</session>

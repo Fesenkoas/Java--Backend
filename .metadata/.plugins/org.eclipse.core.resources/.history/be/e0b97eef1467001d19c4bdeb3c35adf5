@@ -1,0 +1,27 @@
+package telran.fesenko.controller;
+
+import telran.fesenko.model.Circle;
+import telran.fesenko.model.Shape;
+import telran.fesenko.model.Square;
+import telran.fesenko.model.Triangle;
+
+
+public class ShapeApp {
+
+	public static void main(String[] args) {
+		Shape[] figure = new Shape[4];
+		figure[0] = new Circle(8);
+		figure[1] = new Circle(6);
+		figure[2] = new Triangle(9);
+		figure[3] = new Square(7);
+		printArray(figure);
+	}
+
+	private static void printArray(Shape[] firm) {
+		for (int i = 0; i < firm.length; i++) {
+			if (firm[i] != null) {
+				System.out.println(firm[i]);
+			}
+		}
+	}
+}

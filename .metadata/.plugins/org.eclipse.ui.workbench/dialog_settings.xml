@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="workingset_selection_history">
+		<item value="Technologies"/>
+	</list>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.m2e.core.wizards.Maven2ImportWizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Fesenko\Desktop\HW_T_5.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW_T_4.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW_T_3.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW_T_1.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW_Amazon.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW42.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW41.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW40.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW36.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW32.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW30.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW28.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW27.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW26.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW25.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW22_2.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW22/2.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW22.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW21.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\HW20.zip"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Fesenko\Downloads\40-hw-group-sum.zip"/>
+			<item value="C:\Users\Fesenko\Downloads\12-hw-points-space.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\11-hw-datesort.zip"/>
+			<item value="C:\Users\Fesenko\Desktop\07-company.zip"/>
+			<item value="C:\Users\Fesenko\Downloads\07_Interfaces.zip"/>
+			<item value="C:\Users\Fesenko\Downloads\04_RegExp.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
+		</list>
+	</section>
+</section>

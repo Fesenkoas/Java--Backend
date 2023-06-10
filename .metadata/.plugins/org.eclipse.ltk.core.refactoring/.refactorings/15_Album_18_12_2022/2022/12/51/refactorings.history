@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 packages to &apos;16_AlbumSorted_21_12_2022/src&apos;&#x0D;&#x0A;- Original project: &apos;15_Album_18_12_2022&apos;&#x0D;&#x0A;- Destination element: &apos;16_AlbumSorted_21_12_2022/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     15_Album_18_12_2022/src/telran.album.test&#x0D;&#x0A;     15_Album_18_12_2022/src/telran.album.model&#x0D;&#x0A;- Update references to refactored element" description="Move packages" destination="=16_AlbumSorted_21_12_2022/src" element1="/src&lt;telran.album.test" element2="/src&lt;telran.album.model" flags="589830" fragments="2" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1671639720587" version="1.0"/>
+</session>

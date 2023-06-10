@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;17_Учсузешщт_25_12_2022&apos; to &apos;17_Eception_25_12_2022&apos;&#x0D;&#x0A;- Original element: &apos;17_Учсузешщт_25_12_2022&apos;&#x0D;&#x0A;- Renamed element: &apos;17_Учсузешщт_25_12_2022&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;17_Учсузешщт_25_12_2022&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=17_Учсузешщт_25_12_2022" name="17_Eception_25_12_2022" references="true" stamp="1671986773382" version="1.0"/>
+</session>

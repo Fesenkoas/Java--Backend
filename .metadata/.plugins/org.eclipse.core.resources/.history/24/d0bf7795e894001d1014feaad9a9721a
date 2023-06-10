@@ -1,0 +1,5 @@
+package telran.supermarket.dao;
+
+public interface SuperMarket iterable <Product> {
+
+}

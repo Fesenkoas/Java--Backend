@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;telran.chat.model&apos; to &apos;42_ChatServer_30_03_2023/src&apos;&#x0D;&#x0A;- Original project: &apos;42_ChatClient_30_03_2023&apos;&#x0D;&#x0A;- Destination element: &apos;42_ChatServer_30_03_2023/src&apos;&#x0D;&#x0A;- Original element: &apos;42_ChatClient_30_03_2023/src/telran.chat.model&apos;" description="Copy package" destination="=42_ChatServer_30_03_2023/src" element1="/src&lt;telran.chat.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1680341541429" version="1.0"/>
+</session>

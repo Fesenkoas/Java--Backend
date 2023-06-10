@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1667794014737_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1667794014748_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1683885965997_4" label="Java_Core" name="Java_Core">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/01_WrapperClasses_30_10_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HM_26" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jackson-intro" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/13_HW_Matrix" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/08_Company_23_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/37_Elevator_13_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/_BSTree_13_04_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/39_MessageBox_20_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/24_Set_23_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/22_Citizen_16_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HM_Wrapper" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HwAbstract_6" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/35_ultithereading_06_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/35_HW" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/12_Arrays_07_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/31_Anatation_20_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HwString" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/11_Comporator_04_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/21_CompanyList_12_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/18_Iterator_28_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/10_ArrayTools_30_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/19_ArrayList_02_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/11_HW_Datasort" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/09_CompanyPredicate_27_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_AmazonTreasureTruck" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/06_mployee_16_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/14-hw-date-operation" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/21_List_12_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Hw_Garage" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_10" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/03_UserTest_06_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/34_ObjectOrientedSrieam_02_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/41_SocketClient_27_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_Forum" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/22_Collections_22_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/32_ByteIO_23_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/38_Cuncurrent_16_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/26_CompanyMap_30_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/12_HW_PointsSpace" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/17_HW_MemoryService" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_28" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_31" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/02_String_02_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/04_Bitwise_09_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HM_21" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/13_Enum_11_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/03_StringPerfomance_06_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/05_UserEquls_13_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/28_Streamcolecting_09_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/36_interact_09_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/42_ChatClient_30_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_30" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_41" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/20_LinkedList_05_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/30_Reflection_16_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/33_Linestream_27_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/05_PatternMatch_13_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/04_RegEx_09_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/17_Eception_25_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/29_PrimitiveStream_13_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/18_HW_Fibonacci" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/27_FPIntro_06_02_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_40" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/24_CompanySet_23_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/04_HW_Validator" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/42_ChatServer_30_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/07_Company_20_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/40_ThreadfPool_23_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/09_Generic_27_11_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/16_AlbumSorted_21_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/26_Map2_30_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/14_JavaTime_12_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/41_SocketServer_27_03_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Photo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/43_Recursion_03_04_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/23_HashSet_19_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/15_Album_18_12_2022" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HW_36" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/25_map_26_01_2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/27_HW_CompanyStream" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/13_TwoDimensionalArray_11_12_2022" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1683886025489_5" label="Technologies" name="Technologies">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jackson-intro" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/home_work" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rest-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/simple-restful-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/hw_3" type="4"/>
+<item elementID="=student-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=forum-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1667794015271_2" label="Window Working Set" name="Aggregate for window 1667794015271"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1684553021758_5" label="Multiple Working Sets" name="Aggregate:Java_Core:Technologies:">
+<workingSet IMemento.internal.id="Java_Core"/>
+<workingSet IMemento.internal.id="Technologies"/>
+</workingSet>
+<mruList name="Technologies"/>
+<mruList name="Java_Core"/>
+</workingSetManager>

@@ -1,0 +1,171 @@
+package telran.list.model;
+
+import java.util.Iterator;
+
+import telran.list.interfaces.IList;
+
+public class MyLinkedList<E> implements IList<E> {
+	private Node<E> first;
+	private Node<E> last;
+	private int size;
+
+	@Override
+	public Iterator<E> iterator() {
+
+		return new Iterator<E>() {
+			int i = 0;
+			Node<E> node = first;
+
+			@Override
+			public boolean hasNext() {
+				return i < size;
+			}
+
+			@SuppressWarnings("unchecked")
+			@Override
+			public E next() {
+				E e = node.data;
+				node = node.next;
+				i++;
+				return (E) e;
+			}
+		};
+	}
+
+	@Override
+	public void clear() {
+		first = null;
+		last = null;
+		size = 0;
+
+	}
+
+	@Override
+	public int size() {
+
+		return size;
+	}
+
+	@Override
+	public boolean add(E e) {
+		Node<E> newNode = new Node<>(last, e, null);
+		if (last != null)
+			last.next = newNode;
+		else
+			first = newNode;
+		last = newNode;
+		size++;
+
+		return true;
+	}
+
+	@Override
+	public boolean add(int index, E e) {
+		if (index == size)
+			return add(e);
+		if (index == 0) {
+			Node<E> newNode = new Node<>(null, e, first);
+			first.prev = newNode;
+			first = newNode;
+		} else {
+			Node<E> node = getNodeByIndex(index);
+			Node<E> newNode = new Node<>(node.prev, e, node);
+			node.prev = newNode;
+			newNode.prev.next = newNode;
+		}
+
+		size++;
+		return true;
+	}
+
+	private Node<E> getNodeByIndex(int index) {
+		checkIndex(index);
+		Node<E> node = first;
+		for (int i = 0; i < index; i++) {
+			node = node.next;
+		}
+		return node;
+	}
+
+	private void checkIndex(int index) {
+		if (index < 0 || index >= size) {
+			throw new IndexOutOfBoundsException(index + " out ");
+		}
+
+	}
+
+	@Override
+	public E get(int index) {
+		Node<E> node = getNodeByIndex(index);
+		return node.data;
+	}
+
+	@Override
+	public int indexOf(Object o) {
+		int index = 0;
+		if (o != null) {
+			for (Node<E> node = first; node != null; node = node.next, index++) {
+				if (o.equals(node.data)) {
+					return index;
+				}
+			}
+		} else {
+			for (Node<E> node = first; node != null; node = node.next, index++) {
+				if (o == node.data) {
+					return index;
+				}
+			}
+		}
+		return -1;
+	}
+
+	@Override
+	public int lastIndexOf(Object o) {
+		int index = size;
+		if (o != null) {
+			for (Node<E> node = last; node != null; node = node.prev, index--) {
+				if (o.equals(node.data)) {
+					return index;
+				}
+			}
+		} else {
+			for (Node<E> node = last; node != null; node = node.prev, index--) {
+				if (o == node.data) {
+					return index;
+				}
+			}
+		}
+		return -1;
+	}
+
+	@Override
+	public E remove(int index) {
+		Node<E> node = getNodeByIndex(index-1);
+		E victim = node.data;
+		if (index == 0) {
+			first.next = node.next;
+			size--;
+			return victim;
+		}
+		if (index-1 == size) {
+			last.prev = node.prev;
+			size--;
+			return victim;
+
+		}
+//		node.prev.next = node.next;
+//		node.next.prev = node.prev;
+//
+//		size--;
+		return victim;
+	}
+
+	@Override
+	public E set(int index, E e) {
+		Node<E> node = getNodeByIndex(index);
+		E victim = node.data;
+		node.data = e;
+		return victim;
+	}
+
+}

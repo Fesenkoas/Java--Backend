@@ -1,0 +1,10 @@
+package telran.integral.controller;
+
+public class IntegralThreadAppl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

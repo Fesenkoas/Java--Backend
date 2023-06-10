@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;05_UserEquls_13_11_2022/src&apos;&#x0D;&#x0A;- Original project: &apos;03_UserTest_06_11_2022&apos;&#x0D;&#x0A;- Destination element: &apos;05_UserEquls_13_11_2022/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     03_UserTest_06_11_2022/src/telran.user.test&#x0D;&#x0A;     03_UserTest_06_11_2022/src/telran.user.model" description="Copy packages" destination="=05_UserEquls_13_11_2022/src" element1="/src&lt;telran.user.test" element2="/src&lt;telran.user.model" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1668364216227" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;42_СрфеСдшуте_30_03_2023&apos; to &apos;42_ChatClient_30_03_2023&apos;&#x0D;&#x0A;- Original element: &apos;42_СрфеСдшуте_30_03_2023&apos;&#x0D;&#x0A;- Renamed element: &apos;42_СрфеСдшуте_30_03_2023&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;42_СрфеСдшуте_30_03_2023&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=42_СрфеСдшуте_30_03_2023" name="42_ChatClient_30_03_2023" references="true" stamp="1680188733167" version="1.0"/>
+</session>

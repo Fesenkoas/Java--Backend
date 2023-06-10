@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;telran.list.interfaces&apos; to &apos;20_LinkedList_05_01_2023/src&apos;&#x0D;&#x0A;- Original project: &apos;19_ArrayList_02_01_2023&apos;&#x0D;&#x0A;- Destination element: &apos;20_LinkedList_05_01_2023/src&apos;&#x0D;&#x0A;- Original element: &apos;19_ArrayList_02_01_2023/src/telran.list.interfaces&apos;" description="Copy package" destination="=20_LinkedList_05_01_2023/src" element1="/src&lt;telran.list.interfaces" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1672938860090" version="1.0"/>
+</session>

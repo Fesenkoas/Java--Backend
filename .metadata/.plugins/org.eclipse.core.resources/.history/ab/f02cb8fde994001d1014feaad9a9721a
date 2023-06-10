@@ -1,0 +1,43 @@
+package telran.supermarket.dao;
+
+import telran.supermarket.model.Product;
+
+public class SuperMarketImpl implements SuperMarket {
+
+	@Override
+	public boolean addProduct(Product product) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Product removeProduct(long barCode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product findByBarCode(long barCode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<Product> findByBrand(String company) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<Product> findProductWithExpDate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int skuQuantity() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

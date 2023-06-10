@@ -1,0 +1,37 @@
+package telran.solder.model;
+
+public class Solder implements Comparable<T>{
+	String name;
+	int height;
+	int profile;
+	public Solder(String name, int height, int profile) {
+		super();
+		this.name = name;
+		this.height = height;
+		this.profile = profile;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getProfile() {
+		return profile;
+	}
+	public void setProfile(int profile) {
+		this.profile = profile;
+	}
+	@Override
+	public String toString() {
+		return "Solder [name=" + name + ", height=" + height + ", profile=" + profile + "]";
+	}
+	
+	
+}

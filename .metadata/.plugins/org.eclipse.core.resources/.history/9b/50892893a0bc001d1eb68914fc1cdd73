@@ -1,0 +1,31 @@
+package telran.fesenko.controller;
+
+import telran.fesenko.model.Tarakanni;
+
+public class TarakanniAppl {
+
+	private static final int SIZE = 3;
+	private static final int MAX = 10;
+
+	public static void main(String[] args) {
+		int numTarakans, distance;
+		numTarakans = Integer.parseInt(System.console().readLine("Enter the number of tarakans: "));
+		distance = Integer.parseInt(System.console().readLine("Enter the distance of the race: "));
+
+		Tarakanni[] tarakans = new Tarakanni[SIZE];
+		for (int i = 0; i < tarakans.length; i++) {
+			tarakans[i] = new Tarakanni("Name#" + i, MAX);
+		}
+		Thread[] threads = new Thread[tarakans.length];
+		for (int i = 0; i < threads.length; i++) {
+			threads[i] = new Thread(tarakans[i]);
+//			threads[i].setPriority(1);
+//			threads[i].start();
+		}
+		for (int i = 0; i < threads.length; i++) {
+			threads[i].start();
+//			threads[i].join();
+		}
+	}
+
+}

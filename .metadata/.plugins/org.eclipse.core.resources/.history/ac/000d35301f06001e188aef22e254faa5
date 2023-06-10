@@ -1,0 +1,5 @@
+package telran.java47.post.dto;
+
+public class MessageDto {
+
+}

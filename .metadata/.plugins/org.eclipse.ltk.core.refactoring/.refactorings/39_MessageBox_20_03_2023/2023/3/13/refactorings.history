@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;HW_41/src/telran.fesenko.task&apos;&#x0D;&#x0A;- Original project: &apos;39_MessageBox_20_03_2023&apos;&#x0D;&#x0A;- Destination element: &apos;HW_41/src/telran.fesenko.task&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     telran.messages.task.Receiver.java&#x0D;&#x0A;     telran.messages.task.Sender.java" description="Copy compilation units" destination="=HW_41/src&lt;telran.fesenko.task" element1="/src&lt;telran.messages.task{Receiver.java" element2="/src&lt;telran.messages.task{Sender.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1680026140041" units="2" version="1.0"/>
+</session>

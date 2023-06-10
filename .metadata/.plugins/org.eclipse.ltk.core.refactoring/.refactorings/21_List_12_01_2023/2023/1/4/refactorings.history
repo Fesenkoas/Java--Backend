@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;24_Set_23_01_2023/src&apos;&#x0D;&#x0A;- Original project: &apos;21_List_12_01_2023&apos;&#x0D;&#x0A;- Destination element: &apos;24_Set_23_01_2023/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     21_List_12_01_2023/src/telran.employee.model&#x0D;&#x0A;     21_List_12_01_2023/src/telran.list.controler&#x0D;&#x0A;     21_List_12_01_2023/src/telran.employee.test&#x0D;&#x0A;     21_List_12_01_2023/src/telran.employee.dao" description="Copy packages" destination="=24_Set_23_01_2023/src" element1="/src&lt;telran.employee.model" element2="/src&lt;telran.list.controler" element3="/src&lt;telran.employee.test" element4="/src&lt;telran.employee.dao" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1674494535404" version="1.0"/>
+</session>

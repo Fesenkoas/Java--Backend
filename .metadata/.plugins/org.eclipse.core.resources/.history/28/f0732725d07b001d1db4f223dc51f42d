@@ -1,0 +1,31 @@
+package telran.time.controller;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+/*
+ * 1)Current date in time 
+ * 2)Plus and minus date time units
+ * 3)Compare of date
+ * 4)Date Format ISO - 8601
+ * 5)Zoned date time
+ * 6)Period and duration
+ * 7)Customization 
+ * 
+ * Joda time
+ */
+
+
+public class TimeAppl {
+
+	public static void main(String[] args) {
+		LocalDate locData = LocalDate.now();
+		System.out.println(locData);
+		LocalTime locTime = LocalTime.now();
+		System.out.println(locTime);
+		LocalDateTime locDateTime = LocalDateTime.now();
+		System.out.println(locDateTime);
+	}
+
+}

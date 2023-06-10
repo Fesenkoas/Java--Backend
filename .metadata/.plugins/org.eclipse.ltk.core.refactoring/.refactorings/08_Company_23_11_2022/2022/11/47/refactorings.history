@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;09_CompanyPredicate_27_11_2022/src&apos;&#x0D;&#x0A;- Original project: &apos;08_Company_23_11_2022&apos;&#x0D;&#x0A;- Destination element: &apos;09_CompanyPredicate_27_11_2022/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     08_Company_23_11_2022/src/telran.employee.model&#x0D;&#x0A;     08_Company_23_11_2022/src/telran.employee.test&#x0D;&#x0A;     08_Company_23_11_2022/src/telran.employee.dao" description="Copy packages" destination="=09_CompanyPredicate_27_11_2022/src" element1="/src&lt;telran.employee.model" element2="/src&lt;telran.employee.test" element3="/src&lt;telran.employee.dao" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1669571855476" version="1.0"/>
+</session>
