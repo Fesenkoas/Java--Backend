@@ -78,6 +78,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\GitHub\Java- Backend\forum-service"/>
 			<item value="C:\Users\Fesenko\Desktop\student2-service"/>
 			<item value="C:\Users\Fesenko\Desktop\student-service-mongo"/>
 			<item value="C:\Users\Fesenko\Desktop\currency-converter"/>

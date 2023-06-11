@@ -20,7 +20,7 @@ public class PostDto {
 	String content;
 	String author;
 	LocalDateTime dateCreated;
-	@Singular //esli otdelno cozdaem
+	@Singular
 	Set<String> tags;
 	Integer likes;
 	@Singular

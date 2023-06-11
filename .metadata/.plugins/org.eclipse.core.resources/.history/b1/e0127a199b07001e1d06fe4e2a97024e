@@ -1,0 +1,15 @@
+package telran.java47.post.dao;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+import telran.java47.post.model.Post;
+
+public interface PostRepository extends MongoRepository<Post, String> {
+	
+	Stream <Post>findAllByAuthor(String author);
+	
+	Stream<Post>findPostByTags(List<String>tag); 
+}

@@ -1,0 +1,5 @@
+package telran.java47.exception;
+
+public class PostNotFoundException extends Exception {
+
+}

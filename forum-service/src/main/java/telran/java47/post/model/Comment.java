@@ -7,7 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@EqualsAndHashCode(of = { "user", "dateCreate" })
+@EqualsAndHashCode(of = { "user" })
 public class Comment {
 	@Setter
 	String user;
@@ -25,6 +25,7 @@ public class Comment {
 		this.user = user;
 		this.message = message;
 	}
+
 	public void addLike() {
 		likes++;
 	}

@@ -2057,3 +2057,2765 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-06-10 12:27:40.124 -----------------------------------------------
+eclipse.buildId=4.25.0.I20220831-1800
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-06-10 12:27:52.122
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-10 12:27:52.122
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-10 12:27:52.122
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-10 12:27:58.993
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Fesenko'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2023-06-10 12:27:59.679
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '.git', absolute path: 'C:/GitHub/Java- Backend/student-service/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:751)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:714)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:678)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:661)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:335)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:419)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:397)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-06-10 12:28:10.010
+!MESSAGE executing callback sts4.classpath.lJdILtdG FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-06-10 12:28:10.012
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2023-06-10 12:45:53.453
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2023-06-10 14:30:42.107
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-10 14:30:42.107
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-10 14:57:41.167
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-10 16:29:46.934
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-10 16:35:03.844
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-10 16:36:53.921
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.387
+!MESSAGE Error retrieving proposal text.
+Display string:
+map(Function<? super String,? extends R> mapper) : Stream<R> - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 69
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.391
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMulti(BiConsumer<? super String,? super Consumer<R>> mapper) : Stream<R> - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 84
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.392
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMultiToDouble(BiConsumer<? super String,? super DoubleConsumer> mapper) : DoubleStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 98
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.393
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMultiToInt(BiConsumer<? super String,? super IntConsumer> mapper) : IntStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 89
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.394
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMultiToLong(BiConsumer<? super String,? super LongConsumer> mapper) : LongStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 92
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.394
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapToDouble(ToDoubleFunction<? super String> mapper) : DoubleStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 76
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.395
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapToInt(ToIntFunction<? super String> mapper) : IntStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 67
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.396
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapToLong(ToLongFunction<? super String> mapper) : LongStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 70
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5028)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.setItemCount(Table.java:4577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1189)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeAndPopulateProposals(AsyncCompletionProposalPopup.java:221)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.showProposals(AsyncCompletionProposalPopup.java:172)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeProposals(AsyncCompletionProposalPopup.java:331)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1546)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.computeFilteredProposals(AsyncCompletionProposalPopup.java:353)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:367)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.413
+!MESSAGE Error retrieving proposal text.
+Display string:
+map(Function<? super String,? extends R> mapper) : Stream<R> - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 69
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.SendMessage(Native Method)
+	at org.eclipse.swt.widgets.Table.select(Table.java:3330)
+	at org.eclipse.swt.widgets.Table.setSelection(Table.java:5019)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.selectProposal(CompletionProposalPopup.java:1462)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1196)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:375)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4043)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3648)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.414
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMulti(BiConsumer<? super String,? super Consumer<R>> mapper) : Stream<R> - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 84
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.417
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMultiToDouble(BiConsumer<? super String,? super DoubleConsumer> mapper) : DoubleStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 98
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.419
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMultiToInt(BiConsumer<? super String,? super IntConsumer> mapper) : IntStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 89
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.420
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapMultiToLong(BiConsumer<? super String,? super LongConsumer> mapper) : LongStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 92
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.421
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapToDouble(ToDoubleFunction<? super String> mapper) : DoubleStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 76
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.423
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapToInt(ToIntFunction<? super String> mapper) : IntStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 67
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-06-10 17:44:13.424
+!MESSAGE Error retrieving proposal text.
+Display string:
+mapToLong(ToLongFunction<? super String> mapper) : LongStream - Stream
+Pattern:
+package telran.java47.post.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.mongodb.connection.Stream;
+
+import lombok.RequiredArgsConstructor;
+import telran.java47.exception.PostNotFoundException;
+import telran.java47.post.dao.PostRepository;
+import telran.java47.post.dto.DatePeriudDto;
+import telran.java47.post.dto.MessageDto;
+import telran.java47.post.dto.NewPostDto;
+import telran.java47.post.dto.PostDto;
+import telran.java47.post.model.Comment;
+import telran.java47.post.model.Post;
+
+@Service
+@RequiredArgsConstructor
+public class PostServisImpl implements PostServise {
+
+	final PostRepository postRepository;
+	final ModelMapper modelMapper;
+
+	@Override
+	public PostDto addNewPost(String author, NewPostDto newPostDto) {
+		Post post = modelMapper.map(newPostDto, Post.class);
+		post.setAuthor(author);
+		postRepository.save(post);
+		return modelMapper.map(newPostDto, PostDto.class);
+	}
+
+	@Override
+	public PostDto findPostById(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto addComment(String id, String author, MessageDto messageDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		Comment comment = modelMapper.map(messageDto, Comment.class);
+		comment.setUser(author);
+		post.addComment(comment);
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto deletePost(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		postRepository.delete(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public PostDto updatePost(String id, NewPostDto newPostDto) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+
+		post.setTitle(newPostDto.getTitle());
+		post.setContent(newPostDto.getContent());
+		if (!newPostDto.getTags().isEmpty()) {
+			newPostDto.getTags().stream().forEach(e -> post.addTag(e));
+		}
+		postRepository.save(post);
+		return modelMapper.map(post, PostDto.class);
+	}
+
+	@Override
+	public void addLike(String id) {
+		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
+		post.addLike();
+		postRepository.save(post);
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByAuthor(String author) {
+		
+		return postRepository.findAllByAuthor(author)
+				.map(p-> modelMapper.map(p, PostDto.class))
+				.collect(Collectors.toList());
+	}
+
+	@Override
+	public Iterable<PostDto> findPostByTags(List<String> tags) {
+		
+		return postRepository.findAllByTags(tags)
+				.map(p-
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: begin 0, end 2859, length 70
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getPatternMatchRule(AbstractJavaCompletionProposal.java:929)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getStyledDisplayString(LazyJavaCompletionProposal.java:483)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:879)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:1157)
+	at org.eclipse.swt.widgets.Table.wmNotifyChild(Table.java:6604)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5799)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5367)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:588)
+	at org.eclipse.swt.widgets.Table.callWindowProc(Table.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5815)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5036)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3643)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-06-10 17:59:38.188
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-06-10 18:01:57.534
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): findAllByDate(LocalDate, LocalDateTime) [in PostRepository [in [Working copy] PostRepository.java [in telran.java47.post.dao [in src/main/java [in forum-service]]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:617)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:233)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:301)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:644)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:520)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:748)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:666)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.lambda$0(LSJavaHoverProvider.java:68)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-06-10 18:01:57.535
+!MESSAGE findAllByDate(LocalDate, LocalDateTime) [in PostRepository [in [Working copy] PostRepository.java [in telran.java47.post.dao [in src/main/java [in forum-service]]]]] does not exist
