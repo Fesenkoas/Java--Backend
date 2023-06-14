@@ -1,0 +1,5 @@
+package telran.java47accounting.dto;
+
+public class UserDto {
+
+}

@@ -57,7 +57,6 @@ public class PostServisImpl implements PostServise {
 	@Override
 	public PostDto updatePost(String id, NewPostDto newPostDto) {
 		Post post = postRepository.findById(id).orElseThrow(() -> new PostNotFoundException());
-
 		post.setTitle(newPostDto.getTitle());
 		post.setContent(newPostDto.getContent());
 		if (!newPostDto.getTags().isEmpty()) {
@@ -85,9 +84,8 @@ public class PostServisImpl implements PostServise {
 	@Override
 	public Iterable<PostDto> findPostByTags(List<String> tags) {
 		
-		return postRepository.findAllByTags(tags)
-				.filter(p -> p.getTags().containsAll(tags))
-				.map(p-> modelMapper.map(p, PostDto.class))
+		return postRepository.findByTagsInIgnoreCase(tags)
+				.map(p -> modelMapper.map(p, PostDto.class))
 				.collect(Collectors.toList());
 
 	}
@@ -96,7 +94,7 @@ public class PostServisImpl implements PostServise {
 	@Override
 	public Iterable<PostDto> findPostByPeriud(DatePeriudDto datePeriudDto) {
 		
-		return postRepository.findAllByDate(datePeriudDto.getDateFrom(), datePeriudDto.getDateTo())
+		return postRepository.findByDateCreatedBetween(datePeriudDto.getDateFrom(), datePeriudDto.getDateTo())
 				.map(p-> modelMapper.map(p, PostDto.class))
 				.collect(Collectors.toList());
 	}

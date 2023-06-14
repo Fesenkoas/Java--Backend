@@ -13,9 +13,10 @@ public interface PostRepository extends MongoRepository<Post, String> {
 
 	Stream<Post> findAllByAuthor(String author);
 	
-	@Query("{'tags': {'$in': ?0}}")
-	Stream<Post> findAllByTags(List<String> tags);
+	Stream<Post> findByTagsInIgnoreCase(List<String> tags);
 	
-	@Query("{'dateCreated' : {'$gte': ?0, '$lte': ?1}}")
-	Stream<Post> findAllByDate(LocalDate dateFrom, LocalDate dateTo);
+	Stream<Post> findByDateCreatedBetween(LocalDate from, LocalDate to);
+	
+//	@Query("{'dateCreated' : {'$gte': ?0, '$lte': ?1}}")
+//	Stream<Post> findAllByDate(LocalDate dateFrom, LocalDate dateTo);
 }
