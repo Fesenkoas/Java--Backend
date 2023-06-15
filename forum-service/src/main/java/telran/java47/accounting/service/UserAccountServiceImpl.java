@@ -56,12 +56,14 @@ public class UserAccountServiceImpl implements UserAccountService {
 	@Override
 	public RolesDto changeRolesList(String login, String role, Boolean isAddRole) {
 		UserAccount userAccount = userAccountRepository.findById(login).orElseThrow(UserNotFoundException::new);
-		if (isAddRole)
+		if (isAddRole) 
 			userAccount.addRole(role);
-		userAccount.removeRole(role);
+		else
+			userAccount.removeRole(role);
 		userAccountRepository.save(userAccount);
 		return modelMapper.map(userAccount, RolesDto.class);
 	}
+	
 
 	@Override
 	public void changePassword(String login, String newPasword) {
