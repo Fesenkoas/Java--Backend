@@ -44,13 +44,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="telran.java47"/>
 		</list>
 		<list key="name">
-			<item value="HW_ColorPictures"/>
 		</list>
 		<list key="artifactId">
-			<item value="hw_3"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

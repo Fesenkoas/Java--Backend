@@ -1,4 +1,5 @@
-GitRepositoriesView.GitDirectories=
-GitRepositoriesView.GitDirectories.relative=
+GitRepositoriesView.GitDirectories=C\:\\Users\\Fesenko\\git\\forum-service\\.git;C\:\\GitHub\\Java- Backend\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Users\\Fesenko\\git\\forum-service\\.git;.git;
+RepositorySearchDialogDeepSearch=false
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
