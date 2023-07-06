@@ -92,8 +92,9 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/simple-restful-service" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/hw_3" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/student-service" type="4"/>
-<item elementID="=forum-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/forum-service" type="4"/>
 <item elementID="=person-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=book-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1667794015271_2" label="Window Working Set" name="Aggregate for window 1667794015271"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1684553021758_5" label="Multiple Working Sets" name="Aggregate:Java_Core:Technologies:">
