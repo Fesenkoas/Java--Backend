@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=04_HW_Validator/C:\/Users\/Fesenko\/.p2\/pool\/plugins\/org.junit_4.13.2.v20211018-1956.jar&amp;lt;org.junit.runner(JUnitCore.class[JUnitCore&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=04_HW_Validator/C:\/Users\/Fesenko\/.p2\/pool\/plugins\/org.junit_4.13.2.v20211018-1956.jar&amp;lt;org.junit.runner(JUnitCore.class[JUnitCore&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=book-service/C:\/Users\/Fesenko\/.m2\/repository\/antlr\/antlr\/2.7.7\/antlr-2.7.7.jar=/maven.pomderived=/true=/=/maven.groupId=/antlr=/=/maven.artifactId=/antlr=/=/maven.version=/2.7.7=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&amp;lt;antlr.debug.misc(ASTFrame.class[ASTFrame&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=book-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;telran.java47{BookServiceApplication.java[BookServiceApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>
