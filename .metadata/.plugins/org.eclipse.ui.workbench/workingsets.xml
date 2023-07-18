@@ -92,7 +92,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/simple-restful-service" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/hw_3" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/student-service" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/forum-service" type="4"/>
+<item elementID="=forum-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=person-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=book-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
